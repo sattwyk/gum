@@ -1,0 +1,27 @@
+{
+  "name": "gum",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "concurrently \"npm run dev -w packages/app\" \"npm run start -w packages/api\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sattwyk/gum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sattwyk/gum/issues"
+  },
+  "homepage": "https://github.com/sattwyk/gum#readme",
+  "workspaces": [
+    "packages/app",
+    "packages/api"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
